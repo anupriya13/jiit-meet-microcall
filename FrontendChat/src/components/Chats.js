@@ -68,13 +68,13 @@ if(!user || loading)  return 'Loading...'
         <div className="chats-page">
             <div className="nav-bar">
                 <div className="logo-tab">
-                    JIIT Meet - MicroCall
+                    JIIT Meet Call
                 </div>
                 <div onClick={handleLogout} className="newcall-tab">
                     Logout
                 </div>
                 <div className="newcall-tab">
-                <Link to={{ pathname: "https://microcall.herokuapp.com/newcall" }} target="_blank" className="newcall-tab" >
+                <Link to={{ pathname: "http://localhost:3000/newcall" }} target="_blank" className="newcall-tab" >
                     New Call
                     </Link>
                 </div>
@@ -93,3 +93,5 @@ if(!user || loading)  return 'Loading...'
 }
 
 export default Chats;
+/*
+https://microcall.herokuapp.com/newcall*/

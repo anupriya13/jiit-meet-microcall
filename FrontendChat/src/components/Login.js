@@ -12,9 +12,13 @@ const Login = () => {
          <div id="login-page">
              <div className="nav-bar">
              <div className="logo-tab">
-             JIIT Meet - MicroCall
+             JIIT Meet Call
                 </div>
-              
+                <div className="home-tab">
+<Link to={{ pathname: "http://localhost:3000" }} target="_blank"  >
+    Home
+    </Link>
+</div>
              <div id="login-card">
                  <h2>Login</h2>
 
@@ -31,15 +35,8 @@ const Login = () => {
 }
 
 export default Login;
-/*
-<div className="home-tab">
-<Link to={{ pathname: "https://microcall.herokuapp.com" }} target="_blank"  >
-    Home
-    </Link>
-</div>
-*/
 
-/*
+/*https://microcall.herokuapp.com
   <br />
                  <div className="login-button facebook"
                       onClick={() => auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())}>
