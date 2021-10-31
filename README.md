@@ -1,4 +1,4 @@
-# JIIT Meet MicroCall 
+# JIIT Meet Call 
 
 1. frontend -> chats.js
 2. frontend -> login.js
