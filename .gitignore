@@ -1,10 +1,10 @@
 # git folder
 .git
-
+FrontendChat
 # npm
 node_modules
 npm-debug.log
-FrontendChat
+
 # package
 package-lock.json
 
