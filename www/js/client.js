@@ -4157,7 +4157,7 @@ function leaveRoom() {
     },
   }).then((result) => {
     if (result.isConfirmed) {
-      window.location.href = "https://jiit-meet-call.netlify.app/";
+      window.location.href = "https://jiit-meet-call.netlify.app";
     }
   });
 }
