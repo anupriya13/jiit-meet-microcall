@@ -35,7 +35,8 @@ const Chats = () => {
 
          axios.get('https://api.chatengine.io/users/me', {
              headers: {
-                 "project-id" : "9de4b149-6f17-426a-be85-ba9dd645901d",
+                // "project-id" : "9de4b149-6f17-426a-be85-ba9dd645901d",
+                "project-id" : "d229c6f3-007a-4f6a-a0d0-6b353810c826",
                  "user-name" : user.email,
                  "user-secret" : user.uid,
              }
@@ -55,15 +56,16 @@ const Chats = () => {
 
                   axios.post('https://api.chatengine.io/users/',
                   formdata,
-                  { headers: {"private-key": "d37c3c6b-de05-47ae-8dc5-22f2086f0c4c" }}
+                  { headers: {//"private-key": "d37c3c6b-de05-47ae-8dc5-22f2086f0c4c"
+                    "private-key": "f7b342be-79a3-4976-a98e-cd2ebe3f2ae2" }}
                   )
                     .then(() => setLoading(false))
                     .catch((error) => console.log(error) )
               })
          })
      }, [user,history]);
-
-if(!user || loading)  return 'Loading...'
+    
+if(!user || loading)  return 'Loading...';
     return(
         <div className="chats-page">
             <div className="nav-bar">
@@ -74,7 +76,7 @@ if(!user || loading)  return 'Loading...'
                     Logout
                 </div>
                 <div className="newcall-tab">
-                <Link to={{ pathname: "http://localhost:3000/newcall" }} target="_blank" className="newcall-tab" >
+                <Link to={{ pathname: "https://jiit-meet-video.herokuapp.com/newcall" }} target="_blank" className="newcall-tab" >
                     New Call
                     </Link>
                 </div>
@@ -82,7 +84,8 @@ if(!user || loading)  return 'Loading...'
             
             <ChatEngine
                 height="calc( 100vh - 66px )"
-                projectID="9de4b149-6f17-426a-be85-ba9dd645901d" 
+                //projectID="9de4b149-6f17-426a-be85-ba9dd645901d" 
+                projectID="d229c6f3-007a-4f6a-a0d0-6b353810c826"
                 userName={user.email}
                 userSecret={user.uid}
              />

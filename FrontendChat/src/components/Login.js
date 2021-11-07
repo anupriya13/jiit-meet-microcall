@@ -15,7 +15,7 @@ const Login = () => {
              JIIT Meet Call
                 </div>
                 <div className="home-tab">
-<Link to={{ pathname: "http://localhost:3000" }} target="_blank"  >
+<Link to={{ pathname: "https://jiit-meet-video.herokuapp.com" }} target="_blank"  >
     Home
     </Link>
 </div>

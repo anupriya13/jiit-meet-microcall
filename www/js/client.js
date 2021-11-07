@@ -4157,7 +4157,7 @@ function leaveRoom() {
     },
   }).then((result) => {
     if (result.isConfirmed) {
-      window.location.href = "https://microcall-chat.herokuapp.com/";
+      window.location.href = "https://jiit-meet-call.herokuapp.com/";
     }
   });
 }
