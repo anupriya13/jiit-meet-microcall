@@ -1,4 +1,3 @@
-
 "use strict"; // https://www.w3schools.com/js/js_strict.asp
 
 const welcomeImg = "../images/illustration-section-01.svg";
@@ -532,7 +531,7 @@ function initPeer() {
       position: "center",
       imageAlt: "microcall-name",
       imageUrl: welcomeImg,
-      title: "Enter a nickname, it's cool to have one :",
+      title: "Enter your name",
       input: "text",
       html: `<br>
         <button id="initAudioBtn" class="fas fa-microphone" onclick="handleAudio(event, true)"></button>
@@ -547,7 +546,7 @@ function initPeer() {
       },
       inputValidator: (value) => {
         if (!value) {
-          return "Please enter your nickname";
+          return "Please enter your name";
         }
         myPeerName = value;
         myVideoParagraph.innerHTML = myPeerName + " (me)";
